@@ -38,8 +38,8 @@ class BlogController extends BaseController
 				$comment->replies = Comment::getReply(intval($comment->id));
 			}
 		}
-		$count = intdiv(count($newses), 4) + 1;
-		$newses = array_slice($newses, ($pg - 1) * 4, 4);
+		$count = intdiv(count($newses), 3) + 1;
+		$newses = array_slice($newses, ($pg - 1) * 3, 3);
 		$data = array('newses' => $newses, 'recent' => $recent, 'count' => $count);
 		$this->render('index', $data);
 

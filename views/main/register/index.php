@@ -37,43 +37,48 @@
 					<span class="login100-form-title p-b-20">
 						<strong>ĐĂNG KÝ</strong>
 					</span>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
+
+					<?php
+
+					if (isset($err))
+					{
+						echo '<p class="login-box-msg" style="color: red">' . $err . '</p>';
+						unset($err);
+					}
+					?>
+
+					<div class="form-floating mb-3" data-validate = "Valid email is required: ex@abc.xyz">
+						<input type="text" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+						<label for="floatingInput">Tài Khoản</label>
 					</div>
 					
-					
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
+					<div class="form-floating mb-3" data-validate = "Valid email is required: ex@abc.xyz">
+						<input type="password" class="form-control" name="pass" id="floatingPassword" placeholder="name@example.com">
+						<label for="floatingPassword">Mật Khẩu</label>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Fname is required">
-						<input class="input100" type="text" name="fname">
+					<div class="form-floating mb-3 validate-input" data-validate="Fname is required">
+						<input type="text" class="form-control" name="fname" id="floatingFname" placeholder="name@example.com">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Họ</span>
+						<label for="floatingFname">Họ</label>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Lname is required">
-						<input class="input100" type="text" name="lname">
+					<div class="form-floating mb-3 validate-input" data-validate="Lname is required">
+						<input type="text" class="form-control" name="lname" id="floatingLname" placeholder="name@example.com">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Tên</span>
+						<label for="floatingLname">Tên</label>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Age is required">
-						<input class="input100" type="text" name="age">
+					<div class="form-floating mb-3 validate-input" data-validate="Age is required">
+						<input type="text" class="form-control" name="age" id="floatingAge" placeholder="name@example.com">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Tuổi</span>
+						<label for="floatingAge">Tuổi</label>
 					</div>
 
-					<div class="wrap-input100 validate-input">
-						<input class="input100" type="text" name="phone">
+					<div class="form-floating validate-input" data-validate="Age is required">
+						<input type="text" class="form-control" name="phone" id="floatingPhone" placeholder="name@example.com">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Số điện thoại</span>
+						<label for="floatingPhone">Số điện thoại</label>
 					</div>
 
 					<div class="form-check" style="padding-left: 0;">

@@ -78,6 +78,20 @@ class User
         return $user;
     }
 
+    static function getvalidate($email)
+    {
+        $db = DB::getInstance();
+        $req = $db->query(
+            "
+            SELECT email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt 
+            FROM user
+            WHERE email = '$email'
+            ;"
+        );
+        $result = mysqli_num_rows($req);
+        return $result;
+    }
+
     static function insert($email, $profile_photo, $fname, $lname, $gender, $age, $phone, $password)
     {
         $password = password_hash($password, PASSWORD_DEFAULT);

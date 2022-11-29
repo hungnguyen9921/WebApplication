@@ -42,7 +42,7 @@ require_once('views/admin/content_layouts.php'); ?>
 						<ul style="list-style: none;">
 							<li><a href="index.php?page=admin&controller=admin&action=index" class="fas fa-user-graduate"> Quản lý Thành viên</a></li>
 							<li><a href="index.php?page=admin&controller=comments&action=index" class="fas fa-comments"> Bình luận đánh giá</a></li>
-							<li><a href="index.php?page=admin&controller=users&action=index" class="fas fa-users-cog"> Liên hệ khách hàng</a>
+							<li><a href="index.php?page=admin&controller=user&action=index" class="fas fa-users-cog"> Liên hệ khách hàng</a>
 						</ul>
 					</div>
 					<!-- /.col -->

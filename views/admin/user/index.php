@@ -1,10 +1,11 @@
 <?php
 session_start();
-header("Location: ../../../index.php?page=admin&controller=layouts&action=index");
+if (!isset($_SESSION["user"])) {
+	header("Location: index.php?page=admin&controller=login&action=index");
+}
 ?>
 <?php
-	require_once('views/admin/header.php');
- ?>
+require_once('views/admin/header.php'); ?>
 
 <!-- Add CSS -->
 
@@ -146,7 +147,7 @@ require_once('views/admin/content_layouts.php'); ?>
 									foreach ($user as $user) {
 										echo "<tr class='text-center' style='height:300px; line-height:300px; white-space: nowrap;'>";
 										echo "<td>" . $index++ . "</td>";
-										echo "<td><img style=\"width: 200px; height:300px;\" src='$user->profile_photo'></td>";
+										echo "<td><div style=\"width: 200px;\" ><img style=\"width: 200px;\" src='$user->profile_photo'> </div></td>";
 										echo "<td>" . $user->fname . "</td>";
 										echo "<td>" . $user->lname . "</td>";
 										echo "<td>" . (($user->gender == 1) ? "Nam" : "Nữ") . "</td>";

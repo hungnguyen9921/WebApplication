@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+	header("Location: index.php?page=admin&controller=layouts&action=index");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

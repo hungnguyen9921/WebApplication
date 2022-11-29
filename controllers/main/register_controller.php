@@ -23,9 +23,15 @@ class RegisterController extends BaseController
 		$phone = $_POST['phone'];
 		$email = $_POST['email'];
 		$password = $_POST['pass'];
-		echo $fname . $lname . $age . $gender . $phone . $email . $password;
-		User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
-		header('Location: index.php?page=main&controller=layouts&action=index');
+		if(User::getvalidate($email) > 0){
+			$err = "Tài khoản đã tồn tại";
+			$data = array('err' => $err);
+			$this->render('index', $data);
+		} else{
+			User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
+			header('Location: index.php?page=main&controller=layouts&action=index');
+		}
+		
 	}
 
 	public function editInfo()
