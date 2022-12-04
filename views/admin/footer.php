@@ -1,7 +1,7 @@
 <footer class="main-footer">
-	<strong>Copyright &copy; 2021 Khoa KHOA HỌC VÀ KỸ THUẬT MÁY TÍNH.</strong> <br>
-	<em>Designed and Developed by Nguyen Quốc Hùng - Nguyễn Quốc Trọng - Phạm Việt Cường - Đặng Thiên Bảo</em> <br>
-	<em>Instructor: Nguyen Huu Hieu</em>
+	<strong>Copyright &copy; 2022 Khoa KHOA HỌC VÀ KỸ THUẬT MÁY TÍNH.</strong> <br>
+	<em>Designed and Developed by Nguyễn Quốc Hùng - Nguyễn Quốc Trọng - Phạm Việt Cường - Đặng Thiên Bảo</em> <br>
+	<em>Instructor: Nguyễn Đức Phúc</em>
 
 </footer>
 </div>

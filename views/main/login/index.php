@@ -38,11 +38,11 @@
 					</span>
 
 					<div class="form-floating mb-3" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="text" class="form-control" name="username" id="floatingInput" placeholder="name@example.com">
+						<input type="text" class="form-control" name="username" id="floatingInput" placeholder="name@example.com" required>
 						<label for="floatingInput">Email address</label>
 					</div>
 					<div class="form-floating">
-						<input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+						<input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
 						<label for="floatingPassword">Password</label>
 					</div>
 

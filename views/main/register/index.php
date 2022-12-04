@@ -48,35 +48,35 @@
 					?>
 
 					<div class="form-floating mb-3" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="text" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+						<input type="text" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
 						<label for="floatingInput">Tài Khoản</label>
 					</div>
 					
 					<div class="form-floating mb-3" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="password" class="form-control" name="pass" id="floatingPassword" placeholder="name@example.com">
+						<input type="password" class="form-control" name="pass" id="floatingPassword" placeholder="name@example.com" required>
 						<label for="floatingPassword">Mật Khẩu</label>
 					</div>
 
 					<div class="form-floating mb-3 validate-input" data-validate="Fname is required">
-						<input type="text" class="form-control" name="fname" id="floatingFname" placeholder="name@example.com">
+						<input type="text" class="form-control" name="fname" id="floatingFname" placeholder="name@example.com" required>
 						<span class="focus-input100"></span>
 						<label for="floatingFname">Họ</label>
 					</div>
 
 					<div class="form-floating mb-3 validate-input" data-validate="Lname is required">
-						<input type="text" class="form-control" name="lname" id="floatingLname" placeholder="name@example.com">
+						<input type="text" class="form-control" name="lname" id="floatingLname" placeholder="name@example.com" required>
 						<span class="focus-input100"></span>
 						<label for="floatingLname">Tên</label>
 					</div>
 
 					<div class="form-floating mb-3 validate-input" data-validate="Age is required">
-						<input type="text" class="form-control" name="age" id="floatingAge" placeholder="name@example.com">
+						<input type="text" class="form-control" name="age" id="floatingAge" placeholder="name@example.com" required>
 						<span class="focus-input100"></span>
 						<label for="floatingAge">Tuổi</label>
 					</div>
 
 					<div class="form-floating validate-input" data-validate="Age is required">
-						<input type="text" class="form-control" name="phone" id="floatingPhone" placeholder="name@example.com">
+						<input type="text" class="form-control" name="phone" id="floatingPhone" placeholder="name@example.com" required>
 						<span class="focus-input100"></span>
 						<label for="floatingPhone">Số điện thoại</label>
 					</div>
